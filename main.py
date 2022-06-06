@@ -6,13 +6,20 @@ find = Search()
 
 
 if __name__ == '__main__':
-    try:
-        user_in = int(input('Insert a number to square root calculator: '))
 
-        if check_int(user_in):
-            find.square_root(user_in)
+    while True:
+        try:
+            user_in = int(input('\n\033[33;1mInsert a number to square root calculator:\033[0;0m '))
 
-    except (ValueError, SyntaxError):
-        print('Not is a integer number !')
-        print('Please insert a integer number')
+            if check_int(user_in):
+                find.square_root(user_in)
+
+        except (ValueError, SyntaxError):
+            print('\033[31;1mNot is a integer number !\033[0m\n')
+        else:
+            cont = str(input('\033[36;1mWould you like a calculation again ? \n[ y / n]:\033[0;0m ').lower())
+            if cont !="y" and cont != "yes":
+                print('\n\033[31;1mExiting...\033[0m')
+                break
         
+            

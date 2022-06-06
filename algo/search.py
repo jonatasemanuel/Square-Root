@@ -16,8 +16,7 @@ class Search:
             elif (mid * mid) < find_root:
                 return self.square_root(find_root, mid+1, end)
             else:
-                return self.square_root(find_root, begin, mid-1) 
+                return self.square_root(find_root, begin, mid-1)
         else:
-            print(f'\n√{find_root} → No square root\n')
-    # else:
-    #     print('Not is a integer number')
+            print(f'\n\033[31;1m√{find_root} → No square root\033[m\n')
+        return None
