@@ -11,7 +11,7 @@ class Search:
         if begin <= end:
             mid = (begin + end) // 2
             if (mid * mid) == find_root:
-                print(f'\n√{find_root} → {mid}\n')
+                print(f'\n\033[1m√{find_root} → {mid}\033[0m\n')
                 return mid
             elif (mid * mid) < find_root:
                 return self.square_root(find_root, mid+1, end)
