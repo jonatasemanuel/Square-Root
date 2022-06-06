@@ -1,12 +1,14 @@
 @staticmethod
 def check_int(user_input):
+    """Check if user input is a integer number.
 
-    try:
-        if isinstance(user_input, int):
-           return True  
+    Args:
+        user_input (input)): Data to check
 
-    except TypeError or SyntaxError:
-            if isinstance(user_input, float):
-                print('\nPlease insert a integer number \n')
-                return False
-                
+    Returns:
+        int: integer number typed
+    """
+    if isinstance(user_input, int):
+        return user_input
+    return False
+  
