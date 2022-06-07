@@ -6,9 +6,9 @@ find = Search()
 
 
 if __name__ == '__main__':
-
     while True:
         try:
+            # Search.user_input(int())
             user_in = int(input(
                 '\n\033[33;1mInsert a number to square root calculator:\033[0;0m '))
 
@@ -23,4 +23,3 @@ if __name__ == '__main__':
             if cont not in "y yes":
                 print('\n\033[31;1mExiting...\033[0m')
                 break
-        

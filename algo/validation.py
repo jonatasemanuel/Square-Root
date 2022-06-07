@@ -10,5 +10,4 @@ def check_int(user_input):
     """
     if isinstance(user_input, int):
         return user_input
-    return False
-  
+    return False    
