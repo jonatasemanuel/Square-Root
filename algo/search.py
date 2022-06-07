@@ -4,11 +4,9 @@ class Search:
         pass
 
     def square_root(self, find_root, begin=0, end=None):
-
-        arr = list (range(0, find_root))
         if end is None:
-            end = len(arr) - 1
-            
+            end = find_root // 2
+
         if begin <= end:
             mid = (begin + end) // 2
             if (mid * mid) == find_root:
