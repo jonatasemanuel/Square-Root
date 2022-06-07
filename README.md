@@ -1,2 +1,2 @@
 # Square-Root
-Case to binary search application studie.
+Application to found a square root of a number.
