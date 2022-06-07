@@ -1,10 +1,9 @@
 class Search:
 
     def __init__(self) -> None:
-        self.find_root = find_root
+        pass
 
     def square_root(self, find_root, begin=0, end=None):
-        
 
         if end is None:
             end = find_root // 2
@@ -22,6 +21,6 @@ class Search:
             print(f'\n\033[31;1m√{find_root} → No square root\033[m\n')
         return None
 
-    def show_result(self, res):
-        print(f'\n\033[1m√{find_root} → {mid}\033[0m\n')
+    # def show_result(self, res):
+    #     print(f'\n\033[1m√{find_root} → {mid}\033[0m\n')
 
